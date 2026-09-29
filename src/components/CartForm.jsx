@@ -23,7 +23,8 @@ export default class CartForm extends React.Component {
         console.log("e.target[2].value", e.target[2].value)
         console.log("e.target[3].value", e.target[3].value)
 
-        // TODO - process form data
+        // process form data
+        this.props.onBasketRowData(this.state)
 
         this.resetForm()
     }
