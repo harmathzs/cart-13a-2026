@@ -8,6 +8,7 @@ import Basket from './components/Basket'
 export default class App extends React.Component {
   render() {
     return <>
+      <h2>Termék hozzáadása a kosárhoz:</h2>
       <CartForm />
       <hr />
       <h3>A kosár tartalma</h3>
