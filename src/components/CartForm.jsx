@@ -6,6 +6,14 @@ export default class CartForm extends React.Component {
         quantity: 0,
     }
 
+    resetForm = () => {
+        this.setState({
+            productname: "",
+            productprice: "",
+            quantity: 0,
+        })
+    }
+
     handleFormSubmit = (e) =>{
         e.preventDefault()
         console.log("handleFormSubmit state", this.state)
@@ -14,6 +22,10 @@ export default class CartForm extends React.Component {
         console.log("e.target[1].value", e.target[1].value)
         console.log("e.target[2].value", e.target[2].value)
         console.log("e.target[3].value", e.target[3].value)
+
+        // TODO - process form data
+
+        this.resetForm()
     }
 
     handleProductNameChange = (e) => {
